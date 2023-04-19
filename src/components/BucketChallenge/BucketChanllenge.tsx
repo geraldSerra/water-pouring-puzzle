@@ -46,12 +46,6 @@ const BucketChallenge = () => {
     setSteps([]);
   };
 
-  const handleReset = () => {
-    setbucketA({ capacity: 0, amount: 0 });
-    setbucketB({ capacity: 0, amount: 0 });
-    setTarget(0);
-  };
-
   const hanldeSolve = () => {
     if ((bucketA.capacity || bucketB.capacity || target) < 0) {
       return;
@@ -61,7 +55,6 @@ const BucketChallenge = () => {
       const { solution, steps } = result;
       setSolution(solution);
       setSteps(steps);
-      handleReset();
     } else {
       setSolution(["No solution"]);
       setSteps([]);
@@ -79,7 +72,7 @@ const BucketChallenge = () => {
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
-          padding: "1rem",
+          padding: "1.5rem",
           backgroundColor: "#f5f5f5",
           borderRadius: "10px",
         }}
@@ -87,7 +80,7 @@ const BucketChallenge = () => {
       >
         <TextField
           id="bucketA"
-          label="bucket A Capacity"
+          label="Bucket A capacity"
           type="number"
           value={bucketA.capacity}
           onChange={handlebucketACapacityChange}
@@ -96,7 +89,7 @@ const BucketChallenge = () => {
         />
         <TextField
           id="bucketB"
-          label="bucket B Capacity"
+          label="Bucket B capacity"
           type="number"
           value={bucketB.capacity}
           onChange={handlebucketBCapacityChange}
@@ -105,7 +98,7 @@ const BucketChallenge = () => {
         />
         <TextField
           id="target"
-          label="Target Amount"
+          label="Target amount"
           type="number"
           value={target}
           onChange={handleTargetChange}
@@ -128,7 +121,7 @@ const BucketChallenge = () => {
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
-          padding: "1rem",
+          padding: "1.5rem",
           backgroundColor: "#f5f5f5",
           borderRadius: "10px",
         }}
@@ -145,8 +138,8 @@ const BucketChallenge = () => {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>bucket A</TableCell>
-                  <TableCell>bucket B</TableCell>
+                  <TableCell>Bucket A</TableCell>
+                  <TableCell>Bucket B</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
