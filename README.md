@@ -1,6 +1,6 @@
 # Water Pouring Puzzle
 
-##Description
+## Description
 
 This project solves the problem of buckets of water in the most optimal way possible.  You have two numerical entries that symbolize the maximum amount of water, with the fewest number of steps you must reach the third entry, the target.
 
