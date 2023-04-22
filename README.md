@@ -16,7 +16,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `file structure`
+## file structure
 
 As simple as possibble. You only have one component, a tsx that renders the UI, this one call a ts file that take the three entries and solve the puzzle returning the solution.
 
