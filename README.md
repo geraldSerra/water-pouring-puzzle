@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# Water Pouring Puzzle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Description
+
+This project solves the problem of buckets of water in the most optimal way possible.  You have two numerical entries that symbolize the maximum amount of water, with the fewest number of steps you must reach the third entry, the target.
 
 ## Available Scripts
 
-In the project directory, you can run:
+You need to install mui packet node to run it properly. To have every packet that you need just run "npm install" in the project file.
 
 ### `npm start`
 
@@ -14,33 +16,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### `file structure`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As simple as possibble. You only have one component, a tsx that renders the UI, this one call a ts file that take the three entries and solve the puzzle returning the solution.
 
-### `npm run build`
+## Rules
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you want to understand the puzzle rules visit this link: https://en.wikipedia.org/wiki/Water_pouring_puzzle#:~:text=Puzzles%20of%20this%20type%20ask,in%20some%20jug%20or%20jugs.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deploy
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To avoid download and install the project just open and test the app here:
+https://water-pouring-puzzle.vercel.app/
